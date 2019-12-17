@@ -22,19 +22,23 @@ public interface Bird{
 
 Now, this interface is implemented by two bird classes. 
 They are :
-public class Duck implements Bird{   			         public class Parrot implements Bird{		 
-	public void sing(){						public void sing(){
+public class Duck implements Bird{   			        		 public class Parrot implements Bird{		 
+	public void sing(){								public void sing(){
 
-	}								}	
-	public void run(){ 						public void run(){                                            
+	}										}	
+	public void run(){ 								public void run(){                                            
 	
-	}								}
- 	public void swim(){						public void swim(){
-	
-	}								}
-	public void fly(){						public void fly(){
+	}										}
+ 	public void swim(){								public void swim(){
+		
+	}										}
+	public void fly(){								public void fly(){
 
-	}								}					
+	}							        		}	
 
+}										}
 
-}			                			}				 
+The "Duck" class implements the "Bird" interface. It has			The "Parrot" class implements the "Bird" interface. It has to implement
+to implement fly() method and sing() method unnecessarily			swim() method unnecessarily(Parrot doesn't swim). 
+(Duck doesn't fly and sing).							This violates Interface Segregation Principle.
+This violates Interface Segregation Principle.			 
