@@ -44,7 +44,7 @@ to implement fly() method and sing() method unnecessarily			swim() method unnece
 This violates Interface Segregation Principle.			 
 
 In order to solve the above problem, the interface is splited into two different interface
-for two differen classes.
+for two different classes so that each class is not forced to implement the methods they don't need.
 
 public interface NonFlyBird{
    	public void run();
@@ -80,3 +80,6 @@ public class Parrot implements FlyBird{
 }
 The "Parrot" class implements "FlyBird" interface as it contains only
 necessary methods for "Parrot" class.
+
+Interface Segregation Principle splits the interfaces into smaller and more specific ones 
+so that the clients will only use the methods they are interested in. 
