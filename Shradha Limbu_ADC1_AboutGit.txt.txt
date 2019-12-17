@@ -9,3 +9,6 @@ remote repository.
 repository and immediately update the local repository to match that content.By default,
 git pull update the current local working branch and update the remote tracking branches
 for all other branches.
+
+4. Merge Conflict: Merge conflict is an event that occurs when Git two branches are merged
+that have competing commits and Git is 
