@@ -1,1 +1,6 @@
-Interface Inversion Principle
+Interface Segregation Principle
+ 
+This principle states that no client should be forced to depend upon interfaces that they do not use.
+The interface should contain only the necessary abstract method and not more than that.
+This principle include imposing the client with the burden of implementing methods that they don't 
+acutally need or use.
