@@ -11,4 +11,5 @@ git pull update the current local working branch and update the remote tracking 
 for all other branches.
 
 4. Merge Conflict: Merge conflict is an event that occurs when Git two branches are merged
-that have competing commits and Git is 
+that have competing commits and Git is unable to automatically resolve differences in code
+between two commits and need help to decide which changes to incorporate in the final merge.
