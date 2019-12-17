@@ -8,3 +8,33 @@ This type of interface are less re-usable and the useless methods in interface l
 between classes.
 
 Interface Segregation Principle Example
+
+Suppose we have an interface called "Bird".
+This interface has many bird behaviours.
+
+public interface Bird{
+      public void sing();
+      public void run();
+      public void swim(); 
+      public void fly();
+
+}
+
+Now, this interface is implemented by two bird classes. 
+They are :
+public class Duck implements Bird{   			public class Parrot implements Bird{		 
+	public void sing(){
+
+	}	
+	public void run(){
+	
+	}
+ 	public void swim(){
+	
+	}
+	public void fly(){
+
+	}					
+
+
+}			                }				 
