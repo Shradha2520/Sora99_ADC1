@@ -16,3 +16,6 @@ between two commits and need help to decide which changes to incorporate in the 
 
 5. Git Branches: Git branch is a command that is used to create, delete and list branches out from original
 code base and isolate their work from others. The default branch in Git is master branch.
+
+6. Git Commit: Git commit is a command used to save all the staged changes to the local repository along
+with description from the user. 
