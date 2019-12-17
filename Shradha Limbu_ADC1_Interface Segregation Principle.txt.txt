@@ -6,3 +6,5 @@ This principle include imposing the client with the burden of implementing metho
 acutally need or use. The interface with many additional useless methods are called fat interface.
 This type of interface are less re-usable and the useless methods in interface leads to high coupling 
 between classes.
+
+Interface Segregation Principle Example
