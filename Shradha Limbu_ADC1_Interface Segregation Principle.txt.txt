@@ -42,3 +42,41 @@ The "Duck" class implements the "Bird" interface. It has			The "Parrot" class im
 to implement fly() method and sing() method unnecessarily			swim() method unnecessarily(Parrot doesn't swim). 
 (Duck doesn't fly and sing).							This violates Interface Segregation Principle.
 This violates Interface Segregation Principle.			 
+
+In order to solve the above problem, the interface is splited into two different interface
+for two differen classes.
+
+public interface NonFlyBird{
+   	public void run();
+	public void swim();
+}
+
+
+
+public class Duck implements NonFlyBird{
+	public void run(){
+
+	}
+	public void swim(){
+
+	}
+  
+}
+The "Duck" class implements "NonFlyBird" interface as it contains only
+necessage methods for "Duck" class.
+
+public interface FlyBird{
+	public void fly();
+	public void sing();
+}
+
+public class Parrot implements FlyBird{
+	public void fly(){
+
+	}
+ 	public void sing(){
+
+	}
+}
+The "Parrot" class implements "FlyBird" interface as it contains only
+necessary methods for "Parrot" class.
