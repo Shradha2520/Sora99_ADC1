@@ -1,0 +1,25 @@
+Dependency Inversion principle state that high level calss should not depend on low level class rathe they should depend 
+on abstraction(interface). Depending on interface will reduce the dependency between low level and high level classes. Any chage in the low level class wont affect the high level calss and vice versa.
+
+Example of Dependency Inversion principle is:
+
+interface DBConnectionInterface {
+    public void function connect();
+}
+
+class MySQLConnection implements DBConnectionInterface {
+    public void function connect() {
+        return "Database connection";
+    }
+}
+
+class PasswordReminder {
+    private DBConnectionInterface  dbConnection;
+
+    public PasswordReminder (DBConnectionInterface dbConnection) {
+        this.dbConnection = dbConnection;
+    }
+   // work to be done....
+}
+
+In this above example, the passwordReminder class will not be affect by the change of database because the object of database connection is handeled by interface.
