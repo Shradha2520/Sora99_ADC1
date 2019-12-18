@@ -1,8 +1,6 @@
 # Sora99_ADC1
 
-
-GROUP NAME
-Sora99
+GROUP NAME: Sora99
 
 MEMBER NAME
 Shradha Limbu
