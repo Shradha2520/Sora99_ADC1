@@ -1,4 +1,13 @@
 # Sora99_ADC1
 
 
-GROUP NAMEMEMBER NAMESora99Shradha LimbuManil MaharjanBipin Maharjan
+GROUP NAME
+Sora99
+
+MEMBER NAME
+Shradha Limbu
+
+Manil Maharjan
+
+Bipin Maharjan
+
