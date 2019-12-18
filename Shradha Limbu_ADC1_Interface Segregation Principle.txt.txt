@@ -1,0 +1,85 @@
+Interface Segregation Principle
+ 
+This principle states that no client should be forced to depend upon interfaces that they do not use.
+The interface should contain only the necessary abstract method and not more than that.
+This principle include imposing the client with the burden of implementing methods that they don't 
+acutally need or use. The interface with many additional useless methods are called fat interface.
+This type of interface are less re-usable and the useless methods in interface leads to high coupling 
+between classes.
+
+Interface Segregation Principle Example
+
+Suppose we have an interface called "Bird".
+This interface has many bird behaviours.
+
+public interface Bird{
+      public void sing();
+      public void run();
+      public void swim(); 
+      public void fly();
+
+}
+
+Now, this interface is implemented by two bird classes. 
+They are :
+public class Duck implements Bird{   			        		 public class Parrot implements Bird{		 
+	public void sing(){								public void sing(){
+
+	}										}	
+	public void run(){ 								public void run(){                                            
+	
+	}										}
+ 	public void swim(){								public void swim(){
+		
+	}										}
+	public void fly(){								public void fly(){
+
+	}							        		}	
+
+}										}
+
+The "Duck" class implements the "Bird" interface. It has			The "Parrot" class implements the "Bird" interface. It has to implement
+to implement fly() method and sing() method unnecessarily			swim() method unnecessarily(Parrot doesn't swim). 
+(Duck doesn't fly and sing).							This violates Interface Segregation Principle.
+This violates Interface Segregation Principle.			 
+
+In order to solve the above problem, the interface is splited into two different interface
+for two different classes so that each class is not forced to implement the methods they don't need.
+
+public interface NonFlyBird{
+   	public void run();
+	public void swim();
+}
+
+
+
+public class Duck implements NonFlyBird{
+	public void run(){
+
+	}
+	public void swim(){
+
+	}
+  
+}
+The "Duck" class implements "NonFlyBird" interface as it contains only
+necessage methods for "Duck" class.
+
+public interface FlyBird{
+	public void fly();
+	public void sing();
+}
+
+public class Parrot implements FlyBird{
+	public void fly(){
+
+	}
+ 	public void sing(){
+
+	}
+}
+The "Parrot" class implements "FlyBird" interface as it contains only
+necessary methods for "Parrot" class.
+
+Interface Segregation Principle splits the interfaces into smaller and more specific ones 
+so that the clients will only use the methods they are interested in. 
