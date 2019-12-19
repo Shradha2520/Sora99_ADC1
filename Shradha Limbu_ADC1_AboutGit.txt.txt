@@ -1,0 +1,22 @@
+Git Command Explanation
+
+1. Git Clone: Git Clone is a Git command utility which is used to target an existing 
+repository and create a clone or copy of the target repository i.e., local or remote repository.
+
+2. Git Push: Git Push is a Git command used to upload or transfer local repository content into a 
+remote repository. 
+
+3. Git Pull: Git Pull is a Git command used to fetch and download content from remote
+repository and immediately update the local repository to match that content.By default,
+git pull update the current local working branch and update the remote tracking branches
+for all other branches.
+
+4. Merge Conflict: Merge Conflict is an event that occurs when Git two branches are merged
+that have competing commits and Git is unable to automatically resolve differences in code
+between two commits and need help to decide which changes to incorporate in the final merge.
+
+5. Git Branches: Git Branch is a command that is used to create, delete and list branches out from original
+code base and isolate their work from others. The default branch in Git is master branch.
+
+6. Git Commit: Git Commit is a command used to save all the staged changes to the local repository along
+with description from the user. 
