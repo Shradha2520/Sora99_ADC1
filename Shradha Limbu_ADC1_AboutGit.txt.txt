@@ -20,3 +20,6 @@ original code base and isolate their work from others. The default branch in Git
 
 6. Git Commit: Git Commit is a command used to save all the staged changes to the local repository 
 along with description from the user. 
+
+
+
