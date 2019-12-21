@@ -1,0 +1,10 @@
+Open- Closed Principle (Open for extension closed for modification.) 
+
+The Open-Closed Principle (OCP) states that software entities (classes, modules, methods, etc.) should be open for extension but closed for modification. It can be achieved through abstraction.
+•	Open for extension.
+This principle states that class behavior can be extended. As requirements may change in the future we should be able to make a class behave in new and different ways to meet the needs of the new requirements.
+•	Closed for modification.
+Closed for modification means that the source code of the initial class is set to stone, no one is allowed to make changes to the code.
+
+Example of OCP:- 
+Our mobile phones comes with basic functions we can enjoy like camera, phone calls, sms, etc. If we need extend the function of our phone by playing games then we can download games through internet, this is open for extension but we cannot change our Operating System this is closed for modification.
