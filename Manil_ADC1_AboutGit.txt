@@ -1,0 +1,10 @@
+GIT basic commands:
+Git clone: Clones a repository into a new directory
+Git push: Pushing sends the recent commit history from your local repository up to GitHub.
+Git pull: A pull grabs any changes from the GitHub repository and merges them into your local repository.
+Merge: The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch. Note that all of the commands presented below merge into the current branch.
+Conflict:
+Git branches: List, create, or delete branches
+Git commit: Record changes to the repository
+
+
