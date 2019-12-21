@@ -13,15 +13,19 @@ between classes."""
 This interface has many bird behaviours."""
 from abc import ABC, abstractmethod
 class Bird(ABC):
+    
     @abstractmethod
     def sing(self):
         pass
+    
     @abstractmethod
     def run(self):
         pass
+    
     @abstractmethod
     def swim(self):
         pass
+    
     @abstractmethod
     def fly(self):
         pass
@@ -31,10 +35,13 @@ class Bird(ABC):
 class Duck(Bird):
     def sing(self):
         return # Duck don't sing
+    
     def run(self):
         return "Duck run fast"
+    
     def swim(self):
         return "Duck swim beautifully"
+    
     def fly(self):
         return # Duck cannot fly
 
@@ -43,12 +50,16 @@ and sing() method unnecessarily (Duck doens't fly and sing)."""
 
 
 class Parrot(Bird):
+    
     def sing(self):
         return "Parrot sing joyfully"
+    
     def run(self):
         return "Parrot run"
+    
     def swim(self):
         return # Parrot cannot swim
+    
     def fly(self):
         return "Parrot fly high up"
         
@@ -68,6 +79,7 @@ class NonFlyBird(ABC):
     @abstractmethod
     def swim(self):
         pass
+    
 
 class Duck(NonFlyBird):
     def run(self):
@@ -88,6 +100,7 @@ class FlyBird(ABC):
     @abstractmethod
     def run(self):
         pass
+    
 
 class Parrot(FlyBird):
     def fly(self):
